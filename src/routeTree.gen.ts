@@ -10,33 +10,128 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AntesDepoisRouteImport } from './routes/AntesDepois'
+import { Route as ContatoRouteImport } from './routes/Contato'
+import { Route as DepoimentosRouteImport } from './routes/Depoimentos'
+import { Route as PrivacidadeRouteImport } from './routes/Privacidade'
+import { Route as QuizRouteImport } from './routes/Quiz'
+import { Route as ServicosRouteImport } from './routes/Servicos'
+import { Route as TermosRouteImport } from './routes/Termos'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AntesDepoisRoute = AntesDepoisRouteImport.update({
+  id: '/AntesDepois',
+  path: '/AntesDepois',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContatoRoute = ContatoRouteImport.update({
+  id: '/Contato',
+  path: '/Contato',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DepoimentosRoute = DepoimentosRouteImport.update({
+  id: '/Depoimentos',
+  path: '/Depoimentos',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PrivacidadeRoute = PrivacidadeRouteImport.update({
+  id: '/Privacidade',
+  path: '/Privacidade',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const QuizRoute = QuizRouteImport.update({
+  id: '/Quiz',
+  path: '/Quiz',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ServicosRoute = ServicosRouteImport.update({
+  id: '/Servicos',
+  path: '/Servicos',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TermosRoute = TermosRouteImport.update({
+  id: '/Termos',
+  path: '/Termos',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/AntesDepois': typeof AntesDepoisRoute
+  '/Contato': typeof ContatoRoute
+  '/Depoimentos': typeof DepoimentosRoute
+  '/Privacidade': typeof PrivacidadeRoute
+  '/Quiz': typeof QuizRoute
+  '/Servicos': typeof ServicosRoute
+  '/Termos': typeof TermosRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/AntesDepois': typeof AntesDepoisRoute
+  '/Contato': typeof ContatoRoute
+  '/Depoimentos': typeof DepoimentosRoute
+  '/Privacidade': typeof PrivacidadeRoute
+  '/Quiz': typeof QuizRoute
+  '/Servicos': typeof ServicosRoute
+  '/Termos': typeof TermosRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/AntesDepois': typeof AntesDepoisRoute
+  '/Contato': typeof ContatoRoute
+  '/Depoimentos': typeof DepoimentosRoute
+  '/Privacidade': typeof PrivacidadeRoute
+  '/Quiz': typeof QuizRoute
+  '/Servicos': typeof ServicosRoute
+  '/Termos': typeof TermosRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/AntesDepois'
+    | '/Contato'
+    | '/Depoimentos'
+    | '/Privacidade'
+    | '/Quiz'
+    | '/Servicos'
+    | '/Termos'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/AntesDepois'
+    | '/Contato'
+    | '/Depoimentos'
+    | '/Privacidade'
+    | '/Quiz'
+    | '/Servicos'
+    | '/Termos'
+  id:
+    | '__root__'
+    | '/'
+    | '/AntesDepois'
+    | '/Contato'
+    | '/Depoimentos'
+    | '/Privacidade'
+    | '/Quiz'
+    | '/Servicos'
+    | '/Termos'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AntesDepoisRoute: typeof AntesDepoisRoute
+  ContatoRoute: typeof ContatoRoute
+  DepoimentosRoute: typeof DepoimentosRoute
+  PrivacidadeRoute: typeof PrivacidadeRoute
+  QuizRoute: typeof QuizRoute
+  ServicosRoute: typeof ServicosRoute
+  TermosRoute: typeof TermosRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +143,67 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/AntesDepois': {
+      id: '/AntesDepois'
+      path: '/AntesDepois'
+      fullPath: '/AntesDepois'
+      preLoaderRoute: typeof AntesDepoisRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/Contato': {
+      id: '/Contato'
+      path: '/Contato'
+      fullPath: '/Contato'
+      preLoaderRoute: typeof ContatoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/Depoimentos': {
+      id: '/Depoimentos'
+      path: '/Depoimentos'
+      fullPath: '/Depoimentos'
+      preLoaderRoute: typeof DepoimentosRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/Privacidade': {
+      id: '/Privacidade'
+      path: '/Privacidade'
+      fullPath: '/Privacidade'
+      preLoaderRoute: typeof PrivacidadeRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/Quiz': {
+      id: '/Quiz'
+      path: '/Quiz'
+      fullPath: '/Quiz'
+      preLoaderRoute: typeof QuizRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/Servicos': {
+      id: '/Servicos'
+      path: '/Servicos'
+      fullPath: '/Servicos'
+      preLoaderRoute: typeof ServicosRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/Termos': {
+      id: '/Termos'
+      path: '/Termos'
+      fullPath: '/Termos'
+      preLoaderRoute: typeof TermosRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AntesDepoisRoute: AntesDepoisRoute,
+  ContatoRoute: ContatoRoute,
+  DepoimentosRoute: DepoimentosRoute,
+  PrivacidadeRoute: PrivacidadeRoute,
+  QuizRoute: QuizRoute,
+  ServicosRoute: ServicosRoute,
+  TermosRoute: TermosRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
