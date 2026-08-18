@@ -1,9 +1,10 @@
-import estrutura1 from "@/assets/estrutura-1.jpg";
-import estrutura2 from "@/assets/estrutura-2.jpg";
-import estrutura3 from "@/assets/estrutura-3.jpg";
-import estrutura4 from "@/assets/estrutura-4.jpg";
 import estrutura5 from "@/assets/estrutura-5.jpg";
 import estrutura6 from "@/assets/estrutura-6.jpg";
+import recepcaoAsset from "@/assets/clinic-reception.jpg.asset.json";
+import esperaAsset from "@/assets/clinic-waiting.jpg.asset.json";
+import salaAzulAsset from "@/assets/room-blue.jpg.asset.json";
+import salaVerdeAsset from "@/assets/room-green.jpg.asset.json";
+import salaLaranjaAsset from "@/assets/room-orange.jpg.asset.json";
 import ba1a from "@/assets/ba-1-antes.jpg";
 import ba1d from "@/assets/ba-1-depois.jpg";
 import ba2a from "@/assets/ba-2-antes.jpg";
@@ -136,10 +137,11 @@ export const SERVICES: Service[] = [
 ];
 
 export const GALLERY = [
-  { src: estrutura1, alt: "Recepção da Green Smile com balcão em mármore verde" },
-  { src: estrutura2, alt: "Lounge de espera com parede verde viva" },
-  { src: estrutura3, alt: "Consultório climatizado com cromoterapia azul" },
-  { src: estrutura4, alt: "Consultório com cromoterapia âmbar e madeira" },
+  { src: recepcaoAsset.url, alt: "Recepção da Green Smile com parede verde ondulada" },
+  { src: esperaAsset.url, alt: "Sala de espera com poltronas terracota e arranjo floral" },
+  { src: salaAzulAsset.url, alt: "Consultório com cromoterapia azul" },
+  { src: salaVerdeAsset.url, alt: "Consultório com cromoterapia verde" },
+  { src: salaLaranjaAsset.url, alt: "Consultório com cromoterapia âmbar" },
   { src: estrutura5, alt: "Equipamentos de alta tecnologia e imagem digital" },
   { src: estrutura6, alt: "Corredor biofílico com jardim vertical" },
 ];
