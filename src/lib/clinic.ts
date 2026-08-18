@@ -154,6 +154,15 @@ export const BA_CATEGORIES = [
 
 export const BA_CASES = [
   {
+    id: 5,
+    category: "Estética",
+    title: "Lentes de contato dental — caso real",
+    description:
+      "Paciente da Green Smile: formato, alinhamento e cor do sorriso harmonizados com lentes ultrafinas.",
+    antes: lentesAntes.url,
+    depois: lentesDepois.url,
+  },
+  {
     id: 1,
     category: "Invisalign",
     title: "Alinhamento com alinhadores invisíveis",
