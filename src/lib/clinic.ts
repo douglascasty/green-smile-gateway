@@ -137,10 +137,11 @@ export const SERVICES: Service[] = [
 ];
 
 export const GALLERY = [
-  { src: estrutura1, alt: "Recepção da Green Smile com balcão em mármore verde" },
-  { src: estrutura2, alt: "Lounge de espera com parede verde viva" },
-  { src: estrutura3, alt: "Consultório climatizado com cromoterapia azul" },
-  { src: estrutura4, alt: "Consultório com cromoterapia âmbar e madeira" },
+  { src: recepcaoAsset.url, alt: "Recepção da Green Smile com parede verde ondulada" },
+  { src: esperaAsset.url, alt: "Sala de espera com poltronas terracota e arranjo floral" },
+  { src: salaAzulAsset.url, alt: "Consultório com cromoterapia azul" },
+  { src: salaVerdeAsset.url, alt: "Consultório com cromoterapia verde" },
+  { src: salaLaranjaAsset.url, alt: "Consultório com cromoterapia âmbar" },
   { src: estrutura5, alt: "Equipamentos de alta tecnologia e imagem digital" },
   { src: estrutura6, alt: "Corredor biofílico com jardim vertical" },
 ];
