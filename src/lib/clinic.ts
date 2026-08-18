@@ -13,6 +13,8 @@ import ba3d from "@/assets/ba-3-depois.jpg";
 import ba4a from "@/assets/ba-4-antes.jpg";
 import ba4d from "@/assets/ba-4-depois.jpg";
 import logoAsset from "@/assets/logo.png.asset.json";
+import lentesAntes from "@/assets/antes-lentes.jpg.asset.json";
+import lentesDepois from "@/assets/depois-lentes.jpg.asset.json";
 
 export const CLINIC = {
   name: "Green Smile Clínica Odontológica",
