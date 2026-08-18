@@ -2,8 +2,8 @@ import { Leaf, GraduationCap } from "lucide-react";
 import { motion } from "motion/react";
 import sobre1 from "@/assets/sobre-1.jpg";
 import sobre2 from "@/assets/sobre-2.jpg";
-import estrutura2 from "@/assets/estrutura-2.jpg";
-import estrutura4 from "@/assets/estrutura-4.jpg";
+import esperaAsset from "@/assets/clinic-waiting.jpg.asset.json";
+import salaLaranjaAsset from "@/assets/room-orange.jpg.asset.json";
 
 export function About() {
   return (
@@ -24,8 +24,8 @@ export function About() {
           />
           <div className="grid gap-4">
             <img
-              src={estrutura2}
-              alt="Lounge de espera com parede verde"
+              src={esperaAsset.url}
+              alt="Sala de espera da Green Smile com poltronas terracota"
               loading="lazy"
               className="h-34 w-full rounded-2xl object-cover shadow-luxe sm:h-38"
             />
@@ -37,7 +37,7 @@ export function About() {
             />
           </div>
           <img
-            src={estrutura4}
+            src={salaLaranjaAsset.url}
             alt="Consultório com cromoterapia âmbar"
             loading="lazy"
             className="col-span-2 h-48 w-full rounded-3xl object-cover shadow-luxe"
