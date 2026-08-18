@@ -13,6 +13,8 @@ import ba3d from "@/assets/ba-3-depois.jpg";
 import ba4a from "@/assets/ba-4-antes.jpg";
 import ba4d from "@/assets/ba-4-depois.jpg";
 import logoAsset from "@/assets/logo.png.asset.json";
+import lentesAntes from "@/assets/antes-lentes.jpg.asset.json";
+import lentesDepois from "@/assets/depois-lentes.jpg.asset.json";
 
 export const CLINIC = {
   name: "Green Smile Clínica Odontológica",
@@ -151,6 +153,15 @@ export const BA_CATEGORIES = [
 ] as const;
 
 export const BA_CASES = [
+  {
+    id: 5,
+    category: "Estética",
+    title: "Lentes de contato dental — caso real",
+    description:
+      "Paciente da Green Smile: formato, alinhamento e cor do sorriso harmonizados com lentes ultrafinas.",
+    antes: lentesAntes.url,
+    depois: lentesDepois.url,
+  },
   {
     id: 1,
     category: "Invisalign",
