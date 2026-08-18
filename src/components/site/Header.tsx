@@ -134,7 +134,7 @@ export function Header() {
               <img
                 src={CLINIC.logo}
                 alt="Logotipo Green Smile"
-                className="h-16 w-auto brightness-0 invert"
+                className="h-14 w-auto"
               />
               <nav className="flex flex-col gap-1">
                 {NAV.map((item) => {
