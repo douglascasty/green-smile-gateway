@@ -97,7 +97,7 @@ export function Hero() {
               <img
                 src={CLINIC.logo}
                 alt="Marca Green Smile Clínica Odontológica"
-                className="w-56 brightness-0 invert drop-shadow-[0_10px_30px_rgba(0,0,0,0.35)]"
+                className="w-60 drop-shadow-[0_10px_30px_rgba(0,0,0,0.35)]"
               />
             </motion.div>
           </div>

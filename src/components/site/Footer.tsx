@@ -11,7 +11,7 @@ export function Footer() {
             src={CLINIC.logo}
             alt="Logotipo Green Smile Clínica Odontológica"
             loading="lazy"
-            className="h-20 w-auto brightness-0 invert"
+            className="h-20 w-auto"
           />
           <p className="text-sm leading-relaxed text-primary-foreground/70">
             Odontologia de alto padrão no Jabaquara, com ambiente biofílico,

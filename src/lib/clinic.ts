@@ -12,11 +12,12 @@ import ba3a from "@/assets/ba-3-antes.jpg";
 import ba3d from "@/assets/ba-3-depois.jpg";
 import ba4a from "@/assets/ba-4-antes.jpg";
 import ba4d from "@/assets/ba-4-depois.jpg";
+import logoAsset from "@/assets/logo.png.asset.json";
 
 export const CLINIC = {
   name: "Green Smile Clínica Odontológica",
   shortName: "Green Smile",
-  logo: "https://media.base44.com/images/public/6981bf961688af1307193755/247fe50cb_logo.png",
+  logo: logoAsset.url,
   address:
     "Av. Eng. Armando de Arruda Pereira, 2357 - Jabaquara, São Paulo - SP, 04309-011",
   phoneDisplay: "(11) 97060-4418",
