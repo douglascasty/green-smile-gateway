@@ -62,8 +62,8 @@ export function Header() {
             src={CLINIC.logo}
             alt="Logotipo Green Smile Clínica Odontológica"
             className={cn(
-              "h-16 w-auto transition-all duration-300 sm:h-20",
-              solid ? "" : "brightness-0 invert",
+              "h-14 w-auto transition-all duration-300 sm:h-16",
+              solid ? "" : "drop-shadow-[0_6px_18px_rgba(0,0,0,0.35)]",
             )}
           />
         </Link>
